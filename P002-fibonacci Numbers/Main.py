@@ -5,17 +5,18 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,...
 
 
-Fib = [1,2]
-Out = 0
+fib = [1,2]
+out = 0
 
-while Fib[len(Fib)-1] < 4000000:
-    Fib.append(Fib[len(Fib)-1]+Fib[len(Fib)-2])
+while fib[len(fib)-1] < 4000000:
+    fib.append(fib[len(fib)-1]+fib[len(fib)-2])
 
-print(Fib)
+print(fib)
 
-for i in Fib:
-    if i % 2==0: Out += i
+for i in fib:
+    if i % 2==0: out += i
     else:continue
 
-print(Out)
+print(out)
 
+# i figured later but my answer is technically wrong! i had to remove the last entry and i was just lucky that it wasnt an even number.
